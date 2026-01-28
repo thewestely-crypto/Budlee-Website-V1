@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import mixpanel from 'mixpanel-browser';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import AfterSchoolSection from '../components/AfterSchoolSection';
@@ -9,6 +10,9 @@ import ParentsSection from '../components/ParentsSection';
 import Footer from '../components/Footer';
 
 const LandingPage = () => {
+  useEffect(() => {
+    mixpanel.track('Landing Page Viewed');
+  }, []);
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />

@@ -1,3 +1,22 @@
+# Analytics
+
+## MixPanel Analytics
+
+This project uses [MixPanel](https://mixpanel.com/) for analytics tracking.
+
+### Setup
+
+1. Install the MixPanel browser SDK:
+	```sh
+	npm install mixpanel-browser
+	```
+2. The initialization code is in `src/index.js`. Replace `'YOUR_PROJECT_TOKEN'` with your MixPanel project token:
+	```js
+	mixpanel.init('YOUR_PROJECT_TOKEN');
+	```
+3. Basic page view and landing page events are tracked automatically.
+
+For more advanced event tracking, use the `mixpanel.track` API in your React components.
 
 # Budlee Website Frontend
 
