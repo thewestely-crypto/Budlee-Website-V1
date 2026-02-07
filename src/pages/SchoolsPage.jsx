@@ -130,7 +130,7 @@ const SchoolsPage = () => {
         </section>
 
         {/* Section 2 - How Schools Get Started */}
-        <section className="w-full bg-white py-16 md:py-20 px-4 md:px-12 lg:px-20">
+        <section className="w-full bg-gray-50 py-16 md:py-20 px-4 md:px-12 lg:px-20">
           <div className="max-w-6xl mx-auto">
             {/* Section Header */}
             <div className="text-center mb-12 md:mb-16">
