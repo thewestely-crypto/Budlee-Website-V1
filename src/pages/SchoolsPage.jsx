@@ -99,16 +99,19 @@ const SchoolsPage = () => {
 
           {/* CBSE Curriculum Section - Simplified for Schools */}
           <div className="w-full bg-white/80 backdrop-blur-sm py-4 md:py-5 px-4 md:px-12 lg:px-20 border-t border-gray-100 relative z-10">
-            <div className="max-w-6xl mx-auto">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
-                {/* Left - Curriculum Info */}
+            <div className="max-w-6xl mx-auto flex justify-center">
+              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                {/* Left - Curriculum Info (stacked) */}
                 <div className="flex flex-col items-center md:items-start">
                   <span className="text-gray-500 font-medium text-sm md:text-base">
                     Aligned with <span className="gradient-text font-bold">CBSE</span> Curriculum
                   </span>
-                  <div className="flex items-center gap-1.5 mt-1 text-gray-600">
+                  <div className="flex items-center gap-2 mt-1">
                     <FlaskConical className="w-4 h-4 text-green-500" />
-                    <span className="font-medium text-sm md:text-base">Science · Grades 6–10</span>
+                    <span className="text-gray-600 font-medium text-sm md:text-base">Science ·</span>
+                    <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white font-bold text-xs md:text-sm px-3 py-1 rounded-full">
+                      Grades 6–10
+                    </span>
                   </div>
                 </div>
 
