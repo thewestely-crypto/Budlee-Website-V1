@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Linkedin, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -36,11 +36,12 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section - Simple Info Bar */}
+      {/* Bottom Section - 3 Column Layout */}
       <div className="bg-white py-6 px-4 md:px-12 lg:px-20 border-t border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            {/* Logo with Tagline */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            {/* Left - Logo with Tagline */}
             <div className="flex flex-col items-center md:items-start">
               <div className="flex items-center gap-2">
                 <img 
@@ -53,18 +54,9 @@ const Footer = () => {
               <p className="text-gray-500 text-sm mt-1">Learn Better. Build Curiosity</p>
             </div>
 
-            {/* Links and Social Icons */}
-            <div className="flex items-center gap-6">
-              <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
-                Privacy
-              </a>
-              <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
-                Terms
-              </a>
-              <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
-                Contact
-              </a>
-              <div className="flex items-center gap-3 ml-2">
+            {/* Center - Social Icons + Contact */}
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-4">
                 <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
@@ -74,13 +66,34 @@ const Footer = () => {
                 <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
+                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                  <Youtube className="w-5 h-5" />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                  <Twitter className="w-5 h-5" />
+                </a>
+              </div>
+              <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
+                Contact
+              </a>
+            </div>
+
+            {/* Right - Copyright + Terms/Privacy */}
+            <div className="flex flex-col items-center md:items-end gap-1">
+              <p className="text-gray-400 text-sm">
+                © 2025 Budlee AI. All rights reserved.
+              </p>
+              <div className="flex items-center gap-3">
+                <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
+                  Terms
+                </a>
+                <span className="text-gray-300">|</span>
+                <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
+                  Privacy
+                </a>
               </div>
             </div>
 
-            {/* Copyright */}
-            <p className="text-gray-400 text-sm">
-              © 2025 Budlee AI. All rights reserved.
-            </p>
           </div>
         </div>
       </div>
