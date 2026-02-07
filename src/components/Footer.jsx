@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import { Linkedin, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 
-const Footer = () => {
+const Footer = ({ ctaText = "Explore Budlee" }) => {
   return (
     <footer className="w-full">
       {/* Top Section - CTA with Green Gradient */}
@@ -29,7 +29,7 @@ const Footer = () => {
               <Button 
                 className="bg-white text-green-600 hover:bg-green-50 font-bold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Explore Budlee
+                {ctaText}
               </Button>
             </div>
           </div>
