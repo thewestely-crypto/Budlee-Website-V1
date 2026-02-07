@@ -41,23 +41,31 @@ const SchoolsPage = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50"></div>
           
           {/* Main Content */}
-          <div className="flex-grow flex items-center justify-center px-4 md:px-12 lg:px-20 py-12 md:py-16 relative z-10">
+          <div className="flex-grow flex items-center justify-center px-4 md:px-12 lg:px-20 py-8 md:py-10 relative z-10">
             <div className="max-w-6xl mx-auto w-full">
-              
-              {/* Tag */}
-              <div className="text-center mb-6">
-                <span className="inline-block text-xs md:text-sm text-emerald-700 font-medium uppercase tracking-[0.2em] bg-emerald-100/80 px-4 py-1.5 rounded-full">
-                  For Schools & Partners
-                </span>
-              </div>
 
-              {/* Headline */}
-              <h1 className="hero-tagline text-2xl sm:text-3xl md:text-4xl lg:text-[42px] text-center mb-6">
-                What Budlee Brings to Schools
-              </h1>
+              {/* Headline with Budlee */}
+              <div className="flex items-center justify-center gap-4 md:gap-6 mb-4 md:mb-6">
+                <h1 className="hero-tagline text-2xl sm:text-3xl md:text-4xl lg:text-[42px] text-center">
+                  What Budlee Brings to <span className="gradient-text">Schools</span>
+                </h1>
+                
+                {/* Budlee Character with Speech Bubble */}
+                <div className="relative flex-shrink-0">
+                  <div className="absolute -top-10 md:-top-12 left-1/2 -translate-x-1/2 bg-white rounded-xl px-3 py-1.5 shadow-lg whitespace-nowrap">
+                    <span className="text-gray-700 font-semibold text-xs md:text-sm">Let's transform learning!</span>
+                    <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white transform rotate-45"></div>
+                  </div>
+                  <img 
+                    src="/images/budlee.png" 
+                    alt="Budlee" 
+                    className="w-14 h-14 md:w-20 md:h-20 object-contain animate-bounce-gentle"
+                  />
+                </div>
+              </div>
               
               {/* Subtext */}
-              <p className="text-gray-600 text-base md:text-lg lg:text-xl text-center max-w-3xl mx-auto mb-12 md:mb-16">
+              <p className="text-gray-600 text-base md:text-lg lg:text-xl text-center max-w-3xl mx-auto mb-8 md:mb-10">
                 Budlee supports schools by improving learning clarity, helping teachers guide students better, and keeping parents informed without adding pressure.
               </p>
 
