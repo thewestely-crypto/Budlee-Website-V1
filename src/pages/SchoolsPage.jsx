@@ -34,7 +34,12 @@ const SchoolsPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Header ctaText="Request a School Demo" />
+      <Header 
+        ctaText="Request a School Demo" 
+        ctaLink="#"
+        secondaryCtaText="School Login"
+        secondaryCtaLink="#"
+      />
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="w-full min-h-[calc(100vh-70px)] md:min-h-[calc(100vh-88px)] flex flex-col relative overflow-hidden">
