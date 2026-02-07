@@ -128,6 +128,140 @@ const SchoolsPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Section 2 - How Schools Get Started */}
+        <section className="w-full bg-white py-16 md:py-20 px-4 md:px-12 lg:px-20">
+          <div className="max-w-6xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="hero-tagline text-2xl sm:text-3xl md:text-4xl mb-4">
+                How <span className="gradient-text">Schools</span> Get Started
+              </h2>
+              <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+                Budlee is introduced through a simple, low-pressure pilot approach.
+              </p>
+            </div>
+
+            {/* Timeline Steps - Desktop */}
+            <div className="hidden md:block">
+              <div className="relative">
+                {/* Connecting Line */}
+                <div className="absolute top-8 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-green-300 via-emerald-300 to-teal-300"></div>
+                
+                {/* Steps */}
+                <div className="grid grid-cols-4 gap-6">
+                  {/* Step 1 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center mb-4 shadow-lg relative z-10">
+                      <Calendar className="w-7 h-7 text-white" />
+                    </div>
+                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Step 1</span>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">Request a School Demo</h3>
+                    <p className="text-gray-500 text-sm">See how Budlee fits your grades and classrooms</p>
+                  </div>
+
+                  {/* Step 2 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center mb-4 shadow-lg relative z-10">
+                      <Beaker className="w-7 h-7 text-white" />
+                    </div>
+                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Step 2</span>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">Start with a Pilot</h3>
+                    <p className="text-gray-500 text-sm">Use Budlee with selected classes</p>
+                  </div>
+
+                  {/* Step 3 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center mb-4 shadow-lg relative z-10">
+                      <BarChart3 className="w-7 h-7 text-white" />
+                    </div>
+                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Step 3</span>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">Review Progress</h3>
+                    <p className="text-gray-500 text-sm">Teachers and school leaders review learning outcomes</p>
+                  </div>
+
+                  {/* Step 4 */}
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center mb-4 shadow-lg relative z-10">
+                      <Rocket className="w-7 h-7 text-white" />
+                    </div>
+                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Step 4</span>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">Expand Gradually</h3>
+                    <p className="text-gray-500 text-sm">Scale across grades when ready</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline Steps - Mobile (Vertical) */}
+            <div className="md:hidden space-y-8">
+              {/* Step 1 */}
+              <div className="flex gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
+                    <Calendar className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="w-0.5 h-full bg-gradient-to-b from-emerald-300 to-emerald-100 mt-2"></div>
+                </div>
+                <div className="pb-6">
+                  <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Step 1</span>
+                  <h3 className="text-lg font-bold text-gray-800 mt-1">Request a School Demo</h3>
+                  <p className="text-gray-500 text-sm mt-1">See how Budlee fits your grades and classrooms</p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
+                    <Beaker className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="w-0.5 h-full bg-gradient-to-b from-emerald-300 to-emerald-100 mt-2"></div>
+                </div>
+                <div className="pb-6">
+                  <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Step 2</span>
+                  <h3 className="text-lg font-bold text-gray-800 mt-1">Start with a Pilot</h3>
+                  <p className="text-gray-500 text-sm mt-1">Use Budlee with selected classes</p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
+                    <BarChart3 className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="w-0.5 h-full bg-gradient-to-b from-emerald-300 to-emerald-100 mt-2"></div>
+                </div>
+                <div className="pb-6">
+                  <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Step 3</span>
+                  <h3 className="text-lg font-bold text-gray-800 mt-1">Review Progress</h3>
+                  <p className="text-gray-500 text-sm mt-1">Teachers and school leaders review learning outcomes</p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex gap-4">
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 via-emerald-500 to-teal-400 flex items-center justify-center shadow-lg">
+                    <Rocket className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+                <div>
+                  <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Step 4</span>
+                  <h3 className="text-lg font-bold text-gray-800 mt-1">Expand Gradually</h3>
+                  <p className="text-gray-500 text-sm mt-1">Scale across grades when ready</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer Note */}
+            <div className="flex items-center justify-center gap-2 mt-12 md:mt-16">
+              <CheckCircle className="w-5 h-5 text-emerald-500" />
+              <span className="text-gray-600 font-medium">No disruption to regular teaching.</span>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
