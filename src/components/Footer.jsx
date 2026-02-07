@@ -12,6 +12,7 @@ const ThreadsIcon = ({ className }) => (
 const Footer = ({ 
   ctaText = "Explore Budlee",
   ctaLink = "https://app.budlee.ai/",
+  ctaOnClick = null,
   headline = "Start learning in a way that actually makes sense.",
   subtext = "Learn with clarity, ask freely, and explore what interests you."
 }) => {
@@ -38,11 +39,19 @@ const Footer = ({
               <p className="text-green-100 text-base md:text-lg mb-4">
                 {subtext}
               </p>
-              <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+              {ctaOnClick ? (
                 <Button 
+                  onClick={ctaOnClick}
                   className="bg-white text-green-600 hover:bg-green-50 font-bold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   {ctaText}
+                </Button>
+              ) : (
+                <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    className="bg-white text-green-600 hover:bg-green-50 font-bold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    {ctaText}
                 </Button>
               </a>
             </div>
