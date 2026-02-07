@@ -3,7 +3,7 @@ import mixpanel from 'mixpanel-browser';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from '../components/ui/button';
-import { FlaskConical, GraduationCap, Users, School, ArrowRight, Calendar, Beaker, BarChart3, Rocket, CheckCircle } from 'lucide-react';
+import { FlaskConical, GraduationCap, Users, School, ArrowRight, Calendar, Beaker, BarChart3, Rocket, Globe } from 'lucide-react';
 import { curriculumData } from '../data/mock.js';
 
 const SchoolsPage = () => {
