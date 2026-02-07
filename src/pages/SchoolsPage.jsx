@@ -90,9 +90,9 @@ const SchoolsPage = () => {
               </div>
 
               {/* Prominent CTA Button - Below Cards */}
-              <div className="flex justify-center mt-10 md:mt-12">
+              <div className="flex justify-center mt-8 md:mt-10">
                 <Button 
-                  className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-8 py-6 md:px-10 md:py-7 text-base md:text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 uppercase tracking-wide"
+                  className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-8 py-5 md:px-10 md:py-6 text-base md:text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 uppercase tracking-wide"
                 >
                   Request a School Demo
                   <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
