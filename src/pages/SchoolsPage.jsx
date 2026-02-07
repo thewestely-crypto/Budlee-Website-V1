@@ -93,21 +93,6 @@ const SchoolsPage = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Budlee Character */}
-              <div className="flex justify-center mt-10 md:mt-12">
-                <div className="relative">
-                  <div className="absolute -top-10 md:-top-12 left-1/2 -translate-x-1/2 bg-white rounded-xl px-4 py-2 shadow-lg whitespace-nowrap">
-                    <span className="text-gray-700 font-semibold text-sm md:text-base">Let's transform learning together!</span>
-                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white transform rotate-45"></div>
-                  </div>
-                  <img 
-                    src="/images/budlee.png" 
-                    alt="Budlee" 
-                    className="w-20 h-20 md:w-24 md:h-24 object-contain animate-bounce-gentle"
-                  />
-                </div>
-              </div>
             </div>
           </div>
 
