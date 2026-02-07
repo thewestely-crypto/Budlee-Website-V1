@@ -146,7 +146,7 @@ const HeroSection = () => {
                 <p className="text-gray-500 text-sm md:text-base mt-1 md:mt-2 text-center">
                   Are you a school?{' '}
                   <a 
-                    href="#" 
+                    href="/schools" 
                     className="gradient-text font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity"
                   >
                     Get Budlee for Your School
