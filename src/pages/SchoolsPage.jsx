@@ -256,6 +256,61 @@ const SchoolsPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Section 3 - Middle East Presence */}
+        <section className="w-full bg-gradient-to-br from-green-50/50 via-white to-emerald-50/30 py-16 md:py-20 px-4 md:px-12 lg:px-20">
+          <div className="max-w-4xl mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-10 md:mb-14">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Globe className="w-6 h-6 md:w-7 md:h-7 text-emerald-500" />
+                <h2 className="hero-tagline text-2xl sm:text-3xl md:text-4xl">
+                  Middle East <span className="gradient-text">Presence</span>
+                </h2>
+              </div>
+              <p className="text-gray-600 text-base md:text-lg">
+                Budlee AI is live in the Middle East.
+              </p>
+            </div>
+
+            {/* Partner Card */}
+            <div className="flex justify-center">
+              <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-gray-100 max-w-lg w-full">
+                {/* Gradient Top Border */}
+                <div className="h-1.5 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400"></div>
+                
+                <div className="p-6 md:p-8 flex flex-col sm:flex-row items-center gap-6">
+                  {/* Logo Container */}
+                  <div className="flex-shrink-0 w-28 h-28 md:w-32 md:h-32 bg-gray-50 rounded-2xl flex items-center justify-center p-4 border border-gray-100">
+                    <img 
+                      src="/images/kedu.png" 
+                      alt="KEDU Logo" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  
+                  {/* Partner Info */}
+                  <div className="text-center sm:text-left">
+                    {/* UAE Badge */}
+                    <span className="inline-block bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+                      UAE
+                    </span>
+                    
+                    {/* Partner Name */}
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                      KEDU
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+                      Regional partner supporting school onboarding and implementation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
