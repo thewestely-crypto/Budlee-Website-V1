@@ -60,19 +60,19 @@ const SchoolsPage = () => {
               </div>
               
               {/* Subtext */}
-              <p className="text-gray-600 text-base md:text-lg lg:text-xl text-center max-w-3xl mx-auto mb-8 md:mb-10">
+              <p className="text-gray-600 text-base md:text-lg lg:text-xl text-center max-w-3xl mx-auto mb-6 md:mb-8">
                 Budlee supports schools by improving learning clarity, helping teachers guide students better, and keeping parents informed without adding pressure.
               </p>
 
               {/* Benefit Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
                 {benefits.map((benefit, index) => (
                   <div 
                     key={index}
-                    className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                    className="bg-white rounded-2xl md:rounded-3xl p-5 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
                   >
                     {/* Icon + Title in same row */}
-                    <div className="flex items-center gap-4 mb-4">
+                    <div className="flex items-center gap-3 mb-3">
                       <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${benefit.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                         <benefit.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
                       </div>
