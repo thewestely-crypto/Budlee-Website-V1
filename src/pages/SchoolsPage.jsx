@@ -330,9 +330,13 @@ const SchoolsPage = () => {
       </main>
       <Footer 
         ctaText="Talk to Our School Team"
+        ctaOnClick={openModal}
         headline="Ready to see Budlee in your classrooms?"
         subtext="Get a guided demo tailored to your grades, subjects, and teaching approach."
       />
+      
+      {/* School Demo Modal */}
+      <SchoolDemoModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
