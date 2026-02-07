@@ -52,8 +52,9 @@ const Footer = ({
                     className="bg-white text-green-600 hover:bg-green-50 font-bold px-8 py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     {ctaText}
-                </Button>
-              </a>
+                  </Button>
+                </a>
+              )}
             </div>
           </div>
         </div>
