@@ -34,7 +34,7 @@ const SchoolsPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <Header />
+      <Header ctaText="Request a School Demo" />
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="w-full min-h-[calc(100vh-70px)] md:min-h-[calc(100vh-88px)] flex flex-col relative overflow-hidden">
@@ -51,18 +51,12 @@ const SchoolsPage = () => {
                   Budlee for <span className="gradient-text">Schools</span>
                 </h1>
                 
-                {/* Budlee Character with Speech Bubble */}
-                <div className="relative flex-shrink-0">
-                  <div className="absolute -top-10 md:-top-12 left-1/2 -translate-x-1/2 bg-white rounded-xl px-3 py-1.5 shadow-lg whitespace-nowrap">
-                    <span className="text-gray-700 font-semibold text-xs md:text-sm">Let's transform learning!</span>
-                    <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white transform rotate-45"></div>
-                  </div>
-                  <img 
-                    src="/images/budlee.png" 
-                    alt="Budlee" 
-                    className="w-14 h-14 md:w-20 md:h-20 object-contain animate-bounce-gentle"
-                  />
-                </div>
+                {/* Budlee Character - No speech bubble */}
+                <img 
+                  src="/images/budlee.png" 
+                  alt="Budlee" 
+                  className="w-14 h-14 md:w-20 md:h-20 object-contain animate-bounce-gentle flex-shrink-0"
+                />
               </div>
               
               {/* Subtext */}
