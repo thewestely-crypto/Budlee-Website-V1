@@ -54,36 +54,35 @@ const Footer = () => {
               <p className="text-gray-500 text-sm mt-1">Learn Better. Build Curiosity</p>
             </div>
 
-            {/* Center - Social Icons + Contact */}
-            <div className="flex flex-col items-center gap-3">
-              <div className="flex items-center gap-4">
-                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
-                  <Youtube className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
-                  <Twitter className="w-5 h-5" />
-                </a>
-              </div>
-              <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
-                Contact
+            {/* Center - Social Icons */}
+            <div className="flex items-center gap-6">
+              <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-600 transition-colors">
+                <Twitter className="w-5 h-5" />
               </a>
             </div>
 
-            {/* Right - Copyright + Terms/Privacy */}
+            {/* Right - Copyright + Contact/Terms/Privacy */}
             <div className="flex flex-col items-center md:items-end gap-1">
               <p className="text-gray-400 text-sm">
                 © 2025 Budlee AI. All rights reserved.
               </p>
               <div className="flex items-center gap-3">
+                <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
+                  Contact
+                </a>
+                <span className="text-gray-300">|</span>
                 <a href="#" className="text-gray-500 hover:text-green-600 text-sm font-medium transition-colors">
                   Terms
                 </a>
