@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 
-const Header = () => {
+const Header = ({ ctaText = "Explore Budlee" }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Header = () => {
         <Button 
           className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-4 py-4 md:px-6 md:py-5 text-xs md:text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
         >
-          Explore Budlee
+          {ctaText}
         </Button>
       </div>
     </header>
