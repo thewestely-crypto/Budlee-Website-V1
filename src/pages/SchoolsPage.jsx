@@ -88,10 +88,20 @@ const SchoolsPage = () => {
                   </div>
                 ))}
               </div>
+
+              {/* Prominent CTA Button - Below Cards */}
+              <div className="flex justify-center mt-10 md:mt-12">
+                <Button 
+                  className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-8 py-6 md:px-10 md:py-7 text-base md:text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center gap-3 uppercase tracking-wide"
+                >
+                  Request a School Demo
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+                </Button>
+              </div>
             </div>
           </div>
 
-          {/* CBSE Curriculum Section - Single Row Centered */}
+          {/* CBSE Curriculum Section - Informational Only */}
           <div className="w-full bg-white/80 backdrop-blur-sm py-4 md:py-5 px-4 md:px-12 lg:px-20 border-t border-gray-100 relative z-10">
             <div className="max-w-6xl mx-auto flex justify-center">
               <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
@@ -114,16 +124,6 @@ const SchoolsPage = () => {
                 <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white font-bold text-xs md:text-sm px-3 py-1 rounded-full">
                   Grades 6–10
                 </span>
-                
-                <span className="text-gray-300">·</span>
-                
-                {/* CTA Button */}
-                <Button 
-                  className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-4 py-2 md:px-5 md:py-2.5 text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2"
-                >
-                  Request a School Demo
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
               </div>
             </div>
           </div>
