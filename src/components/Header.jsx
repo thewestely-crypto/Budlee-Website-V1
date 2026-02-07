@@ -5,6 +5,7 @@ import { Button } from './ui/button';
 const Header = ({ 
   ctaText = "Explore Budlee", 
   ctaLink = "https://app.budlee.ai/",
+  ctaOnClick = null,
   secondaryCtaText = null,
   secondaryCtaLink = null
 }) => {
@@ -17,6 +18,13 @@ const Header = ({
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handlePrimaryClick = (e) => {
+    if (ctaOnClick) {
+      e.preventDefault();
+      ctaOnClick();
+    }
+  };
 
   return (
     <header className={`w-full py-3 md:py-4 px-4 md:px-12 lg:px-20 sticky top-0 z-50 transition-all duration-300 ${
@@ -51,13 +59,22 @@ const Header = ({
           )}
           
           {/* Primary Button */}
-          <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+          {ctaOnClick ? (
             <Button 
+              onClick={handlePrimaryClick}
               className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-4 py-4 md:px-6 md:py-5 text-xs md:text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
             >
               {ctaText}
             </Button>
-          </a>
+          ) : (
+            <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-4 py-4 md:px-6 md:py-5 text-xs md:text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                {ctaText}
+              </Button>
+            </a>
+          )}
         </div>
       </div>
     </header>
