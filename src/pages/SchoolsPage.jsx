@@ -1,15 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import mixpanel from 'mixpanel-browser';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SchoolDemoModal from '../components/SchoolDemoModal';
 import { Button } from '../components/ui/button';
 import { FlaskConical, GraduationCap, Users, School, ArrowRight, Calendar, Beaker, BarChart3, Rocket, Globe } from 'lucide-react';
-import { curriculumData } from '../data/mock.js';
 
 const SchoolsPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     mixpanel.track('Schools Page Viewed');
   }, []);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const benefits = [
     {
