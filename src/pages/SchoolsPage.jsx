@@ -107,7 +107,7 @@ const SchoolsPage = () => {
               <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
                 {/* Curriculum Text */}
                 <span className="text-gray-500 font-medium text-sm md:text-base">
-                  Aligned with <span className="gradient-text font-bold">CBSE</span> Curriculum
+                  Currently supporting <span className="gradient-text font-bold">CBSE</span>
                 </span>
                 
                 <span className="text-gray-300">·</span>
