@@ -254,12 +254,6 @@ const SchoolsPage = () => {
                 </div>
               </div>
             </div>
-
-            {/* Footer Note */}
-            <div className="flex items-center justify-center gap-2 mt-12 md:mt-16">
-              <CheckCircle className="w-5 h-5 text-emerald-500" />
-              <span className="text-gray-600 font-medium">No disruption to regular teaching.</span>
-            </div>
           </div>
         </section>
       </main>
