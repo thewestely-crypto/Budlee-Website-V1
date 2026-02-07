@@ -47,7 +47,7 @@ const SchoolsPage = () => {
               {/* Headline with Budlee */}
               <div className="flex items-center justify-center gap-4 md:gap-6 mb-4 md:mb-6">
                 <h1 className="hero-tagline text-2xl sm:text-3xl md:text-4xl lg:text-[42px] text-center">
-                  What Budlee Brings to <span className="gradient-text">Schools</span>
+                  Budlee for <span className="gradient-text">Schools</span>
                 </h1>
                 
                 {/* Budlee Character with Speech Bubble */}
