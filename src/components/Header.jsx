@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 
 const Header = ({ ctaText = "Explore Budlee" }) => {
@@ -19,8 +20,8 @@ const Header = ({ ctaText = "Explore Budlee" }) => {
         : 'bg-gradient-to-r from-green-50/80 via-yellow-50/80 to-orange-50/80'
     }`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center gap-2 md:gap-3">
+        {/* Logo - Clickable, links to home */}
+        <Link to="/" className="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity">
           {/* Budlee Character Logo */}
           <img 
             src="/images/budlee.png" 
@@ -28,7 +29,7 @@ const Header = ({ ctaText = "Explore Budlee" }) => {
             className="w-10 h-10 md:w-16 md:h-16 object-contain"
           />
           <span className="logo-text text-xl md:text-3xl text-gray-900">Budlee AI</span>
-        </div>
+        </Link>
 
         {/* CTA Button */}
         <Button 
