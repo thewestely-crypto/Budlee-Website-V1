@@ -120,12 +120,16 @@ const HeroSection = () => {
             {/* Right Side - Content */}
             <div className="w-full lg:w-1/2 flex flex-col items-center">
               <div className="text-center mb-6 md:mb-8">
+                {/* Tag - Small, uppercase, letter-spaced */}
+                <span className="inline-block text-xs md:text-sm text-emerald-600/70 font-medium uppercase tracking-[0.2em] mb-3 md:mb-4">
+                  AI Learning Companion
+                </span>
                 {/* Tagline - Smaller on mobile, allows wrapping */}
                 <h1 className="hero-tagline text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
-                  Helps students understand lessons
+                  Understands how students learn
                 </h1>
                 <h1 className="hero-tagline text-xl sm:text-2xl md:text-3xl lg:text-[32px] mt-1">
-                  and discover curiosity early.
+                  and helps curiosity grow early.
                 </h1>
               </div>
 
