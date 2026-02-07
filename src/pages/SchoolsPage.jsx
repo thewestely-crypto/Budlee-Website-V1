@@ -275,7 +275,12 @@ const SchoolsPage = () => {
 
             {/* Partner Card */}
             <div className="flex justify-center">
-              <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-gray-100 max-w-lg w-full">
+              <a 
+                href="https://kedu.ae/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden border border-gray-100 max-w-lg w-full hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+              >
                 {/* Gradient Top Border */}
                 <div className="h-1.5 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400"></div>
                 
@@ -307,7 +312,7 @@ const SchoolsPage = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
