@@ -138,7 +138,7 @@ const HeroSection = () => {
                 <Button 
                   className="w-full bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-6 py-5 md:px-8 md:py-7 text-sm md:text-base rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wider flex items-center justify-center gap-2"
                 >
-                  Start Learning
+                  Start Learning with Budlee
                   <span className="text-lg">→</span>
                 </Button>
                 
