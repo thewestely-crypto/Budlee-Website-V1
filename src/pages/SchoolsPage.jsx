@@ -317,7 +317,7 @@ const SchoolsPage = () => {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer ctaText="Talk to Our School Team" />
     </div>
   );
 };
