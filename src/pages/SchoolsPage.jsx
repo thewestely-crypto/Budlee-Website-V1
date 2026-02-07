@@ -77,15 +77,15 @@ const SchoolsPage = () => {
                     key={index}
                     className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
                   >
-                    {/* Icon */}
-                    <div className={`w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br ${benefit.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                      <benefit.icon className="w-7 h-7 md:w-8 md:h-8 text-white" />
+                    {/* Icon + Title in same row */}
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${benefit.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                        <benefit.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                      </div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-800">
+                        {benefit.title}
+                      </h3>
                     </div>
-                    
-                    {/* Title */}
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3">
-                      {benefit.title}
-                    </h3>
                     
                     {/* Description */}
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
