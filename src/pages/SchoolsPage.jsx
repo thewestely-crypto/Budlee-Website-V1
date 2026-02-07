@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import mixpanel from 'mixpanel-browser';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { FlaskConical, GraduationCap, Users, School } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { FlaskConical, GraduationCap, Users, School, ArrowRight } from 'lucide-react';
 import { curriculumData } from '../data/mock.js';
 
 const SchoolsPage = () => {
