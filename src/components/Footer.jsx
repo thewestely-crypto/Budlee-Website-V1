@@ -4,8 +4,8 @@ import { Linkedin, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 
 const Footer = ({ 
   ctaText = "Explore Budlee",
-  headline = "Ready to discover your curiosity?",
-  subtext = "Join thousands of students learning with Budlee"
+  headline = "Start learning in a way that actually makes sense.",
+  subtext = "Learn with clarity, ask freely, and explore what interests you."
 }) => {
   return (
     <footer className="w-full">
