@@ -42,11 +42,11 @@ const SchoolsPage = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50"></div>
           
           {/* Main Content */}
-          <div className="flex-grow flex items-center justify-center px-4 md:px-12 lg:px-20 py-8 md:py-10 relative z-10">
+          <div className="flex-grow flex items-center justify-center px-4 md:px-12 lg:px-20 py-6 md:py-8 relative z-10">
             <div className="max-w-6xl mx-auto w-full">
 
               {/* Headline with Budlee */}
-              <div className="flex items-center justify-center gap-4 md:gap-6 mb-4 md:mb-6">
+              <div className="flex items-center justify-center gap-4 md:gap-6 mb-3 md:mb-5">
                 <h1 className="hero-tagline text-2xl sm:text-3xl md:text-4xl lg:text-[42px] text-center">
                   Budlee for <span className="gradient-text">Schools</span>
                 </h1>
