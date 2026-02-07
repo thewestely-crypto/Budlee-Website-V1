@@ -317,7 +317,11 @@ const SchoolsPage = () => {
           </div>
         </section>
       </main>
-      <Footer ctaText="Talk to Our School Team" />
+      <Footer 
+        ctaText="Talk to Our School Team"
+        headline="Ready to see Budlee in your classrooms?"
+        subtext="Get a guided demo tailored to your grades, subjects, and teaching approach."
+      />
     </div>
   );
 };
