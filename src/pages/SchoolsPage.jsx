@@ -97,30 +97,38 @@ const SchoolsPage = () => {
             </div>
           </div>
 
-          {/* CBSE Curriculum Section - Simplified for Schools */}
+          {/* CBSE Curriculum Section - Single Row Centered */}
           <div className="w-full bg-white/80 backdrop-blur-sm py-4 md:py-5 px-4 md:px-12 lg:px-20 border-t border-gray-100 relative z-10">
             <div className="max-w-6xl mx-auto flex justify-center">
-              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-                {/* Left - Curriculum Info (stacked) */}
-                <div className="flex flex-col items-center md:items-start">
-                  <span className="text-gray-500 font-medium text-sm md:text-base">
-                    Aligned with <span className="gradient-text font-bold">CBSE</span> Curriculum
-                  </span>
-                  <div className="flex items-center gap-2 mt-1">
-                    <FlaskConical className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-600 font-medium text-sm md:text-base">Science ·</span>
-                    <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white font-bold text-xs md:text-sm px-3 py-1 rounded-full">
-                      Grades 6–10
-                    </span>
-                  </div>
+              <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+                {/* Curriculum Text */}
+                <span className="text-gray-500 font-medium text-sm md:text-base">
+                  Aligned with <span className="gradient-text font-bold">CBSE</span> Curriculum
+                </span>
+                
+                <span className="text-gray-300">·</span>
+                
+                {/* Science with Icon */}
+                <div className="flex items-center gap-1.5">
+                  <FlaskConical className="w-4 h-4 text-green-500" />
+                  <span className="text-gray-600 font-medium text-sm md:text-base">Science</span>
                 </div>
-
-                {/* Right - CTA Button */}
+                
+                <span className="text-gray-300">·</span>
+                
+                {/* Grades Pill */}
+                <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 text-white font-bold text-xs md:text-sm px-3 py-1 rounded-full">
+                  Grades 6–10
+                </span>
+                
+                <span className="text-gray-300">·</span>
+                
+                {/* CTA Button */}
                 <Button 
-                  className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-6 py-5 md:px-8 md:py-6 text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                  className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-400 hover:from-green-600 hover:via-emerald-600 hover:to-teal-500 text-white font-bold px-4 py-2 md:px-5 md:py-2.5 text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2"
                 >
                   Request a School Demo
-                  <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>
             </div>
